@@ -7,3 +7,4 @@ venv/
 *.sqlite3
 *.env
 *.DS_Store
+lifecanvas/settings.py
