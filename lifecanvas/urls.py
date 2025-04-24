@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -12,4 +12,5 @@ class TestAPIView(APIView):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/test/', TestAPIView.as_view(), name='test-api'),
+    path('api/users/', include('users.urls')),  # Add users app URLs
 ]
