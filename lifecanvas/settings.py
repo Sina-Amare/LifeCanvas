@@ -43,8 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',  # Add DRF
+    'rest_framework',
+    'users.apps.UsersConfig',  # Add users app for user management
+    'journal.apps.JournalConfig',  # Add journal app for daily entries and memories
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -55,6 +58,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',  # For testing purposes
     ],
 }
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
