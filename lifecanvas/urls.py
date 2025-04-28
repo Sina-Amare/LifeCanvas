@@ -5,6 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.views import TokenRefreshView
 from users.jwt_views import CustomTokenObtainPairView
+from django.contrib import admin
 
 
 class TestAPIView(APIView):
@@ -22,6 +23,7 @@ class TestAPIView(APIView):
 
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('api/test/', TestAPIView.as_view(), name='test-api'),
     path('api/users/', include('users.urls')),
     path('api/journal/', include('journal.urls')),  # Add journal app URLs

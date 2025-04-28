@@ -5,12 +5,18 @@ User = get_user_model()
 
 
 class Journal(models.Model):
+    MOOD_CHOICES = [
+        ('happy', 'Happy'),
+        ('sad', 'Sad'),
+        ('angry', 'Angry'),
+        ('neutral', 'Neutral'),
+    ]
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='journals')
     title = models.CharField(max_length=200)
     content = models.TextField()
-    # For emotion analysis later
-    mood = models.CharField(max_length=50, blank=True, null=True)
+    mood = models.CharField(
+        max_length=50, choices=MOOD_CHOICES, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

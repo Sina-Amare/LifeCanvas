@@ -1,0 +1,17 @@
+INFO 2025-04-28 22:03:47,708 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-28 22:03:53,030 log Not Found: /
+WARNING 2025-04-28 22:03:53,130 log Not Found: /favicon.ico
+WARNING 2025-04-28 22:05:59,016 log Not Found: /admin/
+WARNING 2025-04-28 22:06:03,722 log Not Found: /admin/
+INFO 2025-04-28 22:07:37,432 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\urls.py changed, reloading.
+INFO 2025-04-28 22:07:38,253 autoreload Watching for file changes with StatReloader
+INFO 2025-04-28 22:07:52,476 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\urls.py changed, reloading.
+INFO 2025-04-28 22:07:53,246 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-28 22:11:05,343 log Method Not Allowed: /api/token/
+INFO 2025-04-28 22:13:12,782 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR 2025-04-28 22:13:13,839 utils Error analyzing sentiment: name 'Journal' is not defined
+INFO 2025-04-28 22:14:51,875 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\utils.py changed, reloading.
+INFO 2025-04-28 22:14:52,853 autoreload Watching for file changes with StatReloader
+INFO 2025-04-28 22:14:57,714 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\utils.py changed, reloading.
+INFO 2025-04-28 22:14:58,680 autoreload Watching for file changes with StatReloader
+INFO 2025-04-28 22:15:36,102 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
