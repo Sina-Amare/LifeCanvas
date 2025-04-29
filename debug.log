@@ -15,3 +15,380 @@ INFO 2025-04-28 22:14:52,853 autoreload Watching for file changes with StatReloa
 INFO 2025-04-28 22:14:57,714 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\utils.py changed, reloading.
 INFO 2025-04-28 22:14:58,680 autoreload Watching for file changes with StatReloader
 INFO 2025-04-28 22:15:36,102 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+INFO 2025-04-29 00:41:54,890 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-29 00:41:58,639 log Not Found: /favicon.ico
+INFO 2025-04-29 01:02:18,291 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\models.py changed, reloading.
+INFO 2025-04-29 01:02:19,243 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 01:08:49,032 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\models.py changed, reloading.
+INFO 2025-04-29 01:08:49,867 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-29 01:09:47,609 log Internal Server Error: /admin/journal/journal/
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column journal_journal.location does not exist
+LINE 1: ...nal_journal"."content", "journal_journal"."mood", "journal_j...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\contrib\admin\options.py", line 2140, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column journal_journal.location does not exist
+LINE 1: ...nal_journal"."content", "journal_journal"."mood", "journal_j...
+                                                             ^
+
+INFO 2025-04-29 01:10:03,088 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\models.py changed, reloading.
+INFO 2025-04-29 01:10:03,894 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-29 01:10:09,497 log Internal Server Error: /admin/journal/journal/
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column journal_journal.location does not exist
+LINE 1: ...nal_journal"."content", "journal_journal"."mood", "journal_j...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\contrib\admin\options.py", line 2140, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column journal_journal.location does not exist
+LINE 1: ...nal_journal"."content", "journal_journal"."mood", "journal_j...
+                                                             ^
+
+INFO 2025-04-29 01:10:21,648 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\models.py changed, reloading.
+INFO 2025-04-29 01:10:22,413 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 01:10:48,664 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\models.py changed, reloading.
+INFO 2025-04-29 01:10:49,523 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 01:11:01,704 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\serializers.py changed, reloading.
+INFO 2025-04-29 01:11:02,558 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 01:11:18,015 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py changed, reloading.
+INFO 2025-04-29 01:11:18,747 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 19:31:28,838 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-29 20:28:17,791 log Unauthorized: /api/journal/journals/
+INFO 2025-04-29 20:39:39,111 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\settings.py changed, reloading.
+INFO 2025-04-29 20:39:40,238 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:39:49,969 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\settings.py changed, reloading.
+INFO 2025-04-29 20:39:50,885 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:40:00,592 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\settings.py changed, reloading.
+INFO 2025-04-29 20:40:01,205 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:40:03,757 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\settings.py changed, reloading.
+INFO 2025-04-29 20:40:04,297 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:40:06,780 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\settings.py changed, reloading.
+INFO 2025-04-29 20:40:07,393 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:40:27,384 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:57:14,997 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\lifecanvas\settings.py changed, reloading.
+INFO 2025-04-29 20:57:15,936 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 20:57:22,942 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 21:02:01,519 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-29 21:02:40,527 log Internal Server Error: /api/journal/journals/
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 360, in get_filters
+    filter_instance = cls.filter_for_field(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 410, in filter_for_field
+    cls.handle_unrecognized_field(field_name, (
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 385, in handle_unrecognized_field
+    raise AssertionError(message)
+AssertionError: AutoFilterSet resolved field 'labels' with 'exact' lookup to an unrecognized field type JSONField. Try adding an override to 'Meta.filter_overrides'. See: https://django-filter.readthedocs.io/en/main/ref/filterset.html#customise-filter-generation-with-filter-overrides
+INFO 2025-04-29 21:04:05,532 _base_client Retrying request to /chat/completions in 0.381416 seconds
+INFO 2025-04-29 21:04:06,494 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR 2025-04-29 21:04:10,666 log Internal Server Error: /api/journal/journals/
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "location" of relation "journal_journal" does not exist
+LINE 1: ..._journal" ("user_id", "title", "content", "mood", "location"...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py", line 31, in perform_create
+    serializer.save(user=self.request.user, mood=mood)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "location" of relation "journal_journal" does not exist
+LINE 1: ..._journal" ("user_id", "title", "content", "mood", "location"...
+                                                             ^
+
+INFO 2025-04-29 21:25:29,340 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-29 21:26:06,429 log Internal Server Error: /api/journal/journals/
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 360, in get_filters
+    filter_instance = cls.filter_for_field(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 410, in filter_for_field
+    cls.handle_unrecognized_field(field_name, (
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 385, in handle_unrecognized_field
+    raise AssertionError(message)
+AssertionError: AutoFilterSet resolved field 'labels' with 'exact' lookup to an unrecognized field type JSONField. Try adding an override to 'Meta.filter_overrides'. See: https://django-filter.readthedocs.io/en/main/ref/filterset.html#customise-filter-generation-with-filter-overrides
+WARNING 2025-04-29 21:26:38,048 log Not Found: /favicon.ico
+INFO 2025-04-29 21:27:11,832 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"

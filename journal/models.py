@@ -17,6 +17,10 @@ class Journal(models.Model):
     content = models.TextField()
     mood = models.CharField(
         max_length=50, choices=MOOD_CHOICES, blank=True, null=True)
+    # Optional location field (e.g., "Tehran", "Cafe X")
+    location = models.CharField(max_length=100, blank=True, null=True)
+    # Store labels as a list (e.g., ["travel", "emotional"])
+    labels = models.JSONField(default=list, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

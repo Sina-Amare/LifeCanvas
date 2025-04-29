@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
+from django_filters.rest_framework import DjangoFilterBackend
 from .models import Journal
 from .serializers import JournalSerializer
 from .utils import analyze_sentiment
@@ -10,6 +11,9 @@ class JournalViewSet(viewsets.ModelViewSet):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = JournalSerializer
+    filter_backends = [DjangoFilterBackend]
+    # Allow filtering by these fields
+    filterset_fields = ['created_at', 'location', 'labels']
 
     def get_queryset(self):
         # Only return journals belonging to the authenticated user

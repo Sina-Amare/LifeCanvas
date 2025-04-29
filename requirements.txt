@@ -8,3 +8,4 @@ python-dotenv
 python-decouple
 djangorestframework-simplejwt
 openai
+django-filter
