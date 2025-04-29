@@ -392,3 +392,99 @@ Traceback (most recent call last):
 AssertionError: AutoFilterSet resolved field 'labels' with 'exact' lookup to an unrecognized field type JSONField. Try adding an override to 'Meta.filter_overrides'. See: https://django-filter.readthedocs.io/en/main/ref/filterset.html#customise-filter-generation-with-filter-overrides
 WARNING 2025-04-29 21:26:38,048 log Not Found: /favicon.ico
 INFO 2025-04-29 21:27:11,832 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+INFO 2025-04-29 22:01:45,906 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-29 22:01:52,149 log Not Found: /favicon.ico
+WARNING 2025-04-29 22:02:03,185 log Not Found: /favicon.ico
+WARNING 2025-04-29 22:04:54,342 log Bad Request: /api/token/
+ERROR 2025-04-29 22:05:15,190 log Internal Server Error: /api/journal/journals/
+Traceback (most recent call last):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\rest_framework\generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 360, in get_filters
+    filter_instance = cls.filter_for_field(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 410, in filter_for_field
+    cls.handle_unrecognized_field(field_name, (
+  File "C:\Users\sinaa\Desktop\Projects\venv\Lib\site-packages\django_filters\filterset.py", line 385, in handle_unrecognized_field
+    raise AssertionError(message)
+AssertionError: AutoFilterSet resolved field 'labels' with 'exact' lookup to an unrecognized field type JSONField. Try adding an override to 'Meta.filter_overrides'. See: https://django-filter.readthedocs.io/en/main/ref/filterset.html#customise-filter-generation-with-filter-overrides
+INFO 2025-04-29 22:08:46,027 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py changed, reloading.
+INFO 2025-04-29 22:08:46,869 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 22:09:49,527 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py changed, reloading.
+INFO 2025-04-29 22:09:50,197 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 22:11:50,235 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py changed, reloading.
+INFO 2025-04-29 22:11:51,178 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 22:14:44,378 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 00:34:16,271 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:14:11,183 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\serializers.py changed, reloading.
+INFO 2025-04-30 01:14:12,065 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:14:33,085 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py changed, reloading.
+INFO 2025-04-30 01:14:33,820 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:14:46,345 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\urls.py changed, reloading.
+INFO 2025-04-30 01:14:47,097 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:16:10,858 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-30 01:17:56,257 log Bad Request: /api/token/
+WARNING 2025-04-30 01:18:39,869 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:19:10,534 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:21:18,915 log Not Found: /favicon.ico
+WARNING 2025-04-30 01:21:20,184 log Not Found: /admin/j
+WARNING 2025-04-30 01:22:15,979 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:22:33,944 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:23:02,111 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:23:07,594 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:23:14,813 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:25:32,966 log Bad Request: /api/users/register/
+WARNING 2025-04-30 01:25:40,903 log Bad Request: /api/users/register/
+INFO 2025-04-30 01:29:59,464 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\serializers.py changed, reloading.
+INFO 2025-04-30 01:30:00,643 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:35:37,517 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\users\models.py changed, reloading.
+INFO 2025-04-30 01:35:38,519 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:38:46,325 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\users\models.py changed, reloading.
+INFO 2025-04-30 01:38:47,276 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:40:02,176 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\serializers.py changed, reloading.
+INFO 2025-04-30 01:40:03,232 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:40:13,544 autoreload C:\Users\sinaa\Desktop\Projects\lifecanvas\journal\views.py changed, reloading.
+INFO 2025-04-30 01:40:14,289 autoreload Watching for file changes with StatReloader
+INFO 2025-04-30 01:41:37,188 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-30 01:42:16,691 log Bad Request: /api/token/
+WARNING 2025-04-30 01:43:14,158 log Bad Request: /api/token/
+WARNING 2025-04-30 01:43:19,318 log Not Found: /api/users/me/
+INFO 2025-04-30 01:43:59,984 _client HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+WARNING 2025-04-30 01:45:39,745 log Bad Request: /api/users/register/
