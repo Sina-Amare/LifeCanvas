@@ -20,6 +20,7 @@ def analyze_sentiment(content):
     # Define the prompt for sentiment analysis
     prompt = (
         "Analyze the sentiment of the following text and classify it as one of these moods: "
+        "sometimes the text might be in another language rather than english , if so , first try changing it to persian and then analyze , e.g : boos = بوس = kiss , talkh = تلخ = bitter , ..."
         "happy, sad, angry, or neutral. Return only the mood word, nothing else.\n\n"
         f"Text: {content}"
     )
